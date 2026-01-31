@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fffffa;
+  background-image: linear-gradient(0deg, transparent calc(100% - 2px), #f5f1ec calc(100% - 2px)), linear-gradient(90deg, transparent calc(100% - 2px), #f5f1ec calc(100% - 2px));
+  background-size: 50px 50px;
+  background-repeat: repeat;
+  padding: 0;
+}
+
+span.btn-y {
+  display: inline-block;
+  background-color: #EDE896;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+span.btn-g {
+  display: inline-block;
+  background-color: #CEE8D7;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+span.btn-v {
+  display: inline-block;
+  background-color: #F0CED3;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+
+/* アニメーション */
+.window-animate {
+  opacity: 0;
+  transform: translateY(40px) scale(0.9);
+  transition: transform 0.4s ease, opacity 0.6s ease;
+  will-change: transform, opacity;
+}
+
+.window-animate.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.window-animate.only-show:hover {
+  pointer-events: auto;
+  transform: none !important;
+}

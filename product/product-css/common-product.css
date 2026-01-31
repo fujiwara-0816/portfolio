@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+main {
+  color: #626343;
+}
+
+
+/* 取り組み */
+#works-wrapper {
+  width: 70vw;
+  height: auto;
+  max-width: 1200px;
+  margin: 72px auto;
+  padding: 0;
+}
+
+#works-back-window {
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(110, 110, 110);
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f4f7ee;
+}
+
+#works-back-window .tab-wrapper {
+  display: flex;
+  gap: 4px;
+}
+
+#works-back-window .window-header {
+  padding: 0 16px 0 0;
+  display: flex;
+  background-color: #B6D56A;
+  align-items: center;
+}
+
+.window-btn {
+  height: 100%;
+  display: flex;
+  gap: 4px;
+  margin: 16px 16px;
+}
+
+#works-back-window .tab {
+  height: auto;
+  margin: 8px 8px 0;
+  padding: 8px 16px;
+  border-radius: 5px 5px 0 0;
+  z-index: 50;
+  display: flex;
+  color: #626343;
+  font-weight: bold;
+}
+
+.tab-between {
+  height: 24px;
+  width: 2px;
+  margin: 16px 0 auto;
+  background-color: #a19a96;
+}
+
+#works-wrapper a {
+  text-decoration: none;
+}
+
+/* 作品紹介 */
+#works-ditail-wrapper {
+  display: flex;
+  width: 90%;
+  margin: 32px auto;
+  height: auto;
+  gap: 32px;
+}
+
+/* 作品紹介内のウィンドウcss */
+.color1 {
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  border: 2px solid #BEB098;
+}
+
+/* 作品 */
+#visual {
+  width: 40%;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#visual a {
+  color: #626343;
+  text-decoration-line: underline;
+  margin-top: 10px;
+}
+
+#visual-window {
+  width: 40%;
+  max-height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #BEB098;
+  background-color: #fff;
+}
+
+.img-wapper {
+  width: auto;
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#visual-window img {
+  width: 100%;
+}
+
+#visual img {
+  width: 100%;
+  border: 2px solid #BEB098;
+  border-radius: 5px;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 5px;
+  border: #BEB098 2px solid;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.video-wrapper iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 作品紹介 */
+
+#explanation-wapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 32px;
+}
+
+#explanation-wapper h2 {
+  margin: 0 0 16px 16px;
+  font-size: 20px;
+}
+
+/* 概要 */
+#summary-window-wapper {
+  height: auto;
+  z-index: 10;
+  text-align: left;
+}
+
+#summary-window {
+  width: auto;
+  z-index: 10;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid #BEB098;
+}
+
+.name {
+  margin-top: 0;
+}
+
+.summary {
+  width: auto;
+}
+
+.summary ul {
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+  width: auto;
+  margin: 16px 32px;
+  padding: 0;
+}
+
+.summary li {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 32px 8px 16px;
+  border-bottom: 2px dotted hsl(22, 6%, 61%);
+}
+
+.summary li:first-child {
+  padding-top: 0;
+}
+
+.summary li:last-child {
+  border: none;
+}
+
+.summary span {
+  width: 7em;
+  flex-shrink: 0;
+}
+
+.summary li img {
+  width: 32px;
+  margin-right: 8px;
+}
+
+.summary li p {
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  flex: 1;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+#explanation-wapper a {
+  position: absolute;
+  text-decoration: none;
+  width: 70%;
+  height: 30px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 10px;
+  border-radius: 10px;
+  z-index: 50;
+  text-align: center;
+  border: 2px solid #a19a96;
+}
+
+#outline h2 {
+  margin: 0 0 16px 16px;
+  font-size: 20px;
+}
+
+#outline p {
+  margin: 16px 32px;
+  text-align: justify;
+}
+
+#aim h2 {
+  margin: 0 0 16px 16px;
+  font-size: 20px;
+}
+
+#aim p {
+  margin: 16px 32px;
+  text-align: justify;
+}
+
+/* 概要ここまで */
+
+
+/* ポイント欄 */
+#commitment-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#commitment-wrapper h2 {
+  margin: 0 0 16px 16px;
+  font-size: 20px;
+}
+
+.point-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.point-wrapper h3 {
+  margin: 16px 32px 0;
+  font-size: 18px;
+}
+
+.point-wrapper p {
+  margin: 16px 32px;
+  text-align: justify;
+}
+
+/* ポイント欄 */
+/* 学んだこと */
+#learn-wrapper h2 {
+  margin: 0 0 16px 16px;
+  font-size: 20px;
+}
+
+#learn-wrapper h3,
+#learn-wrapper p {
+  margin: 16px 32px;
+  text-align: justify;
+}
+
+/* 学んだこと */
+
+.for-top-wrapper {
+  width: 40%;
+  text-decoration: none;
+  text-align: center;
+  background-color: #EDE896;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+  margin: 72px auto 0;
+  padding: 16px;
+  opacity: 0.8;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.for-top-wrapper:hover {
+  opacity: 1;
+  transform: translateY(0) scale(1.02);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.for-top {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  color: #626343;
+  opacity: 0.8;
+  transform: scale(1.0);
+  transition: transform 0.2s ease;
+}
+
+.for-top-wrapper:hover .for-top {
+  opacity: 1;
+  transform: translateY(0) scale(1.02);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+/* 作品紹介ここまで */
+/* フッター */
+footer {
+  background-color: #94D1CA;
+  width: 100vw;
+  height: 5vh;
+  margin-bottom: 0;
+  padding-right: 64px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0;
+}

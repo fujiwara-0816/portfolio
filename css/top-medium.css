@@ -1,0 +1,640 @@
+/* 共通↓ */
+main {
+  color: #626343;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  position: relative;
+}
+
+#top-wrapper,
+#who-wrapper {
+  margin: 0 auto;
+}
+
+#top-back-window,
+#who-back-window,
+#top-main-window,
+#works-back-window {
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(110, 110, 110);
+  overflow: hidden;
+}
+
+/* メイン ↓*/
+
+/* トップセクション↓ */
+#top-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 45px auto;
+}
+
+#top-back-window {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  aspect-ratio: 5/4.5;
+  max-width: 900px;
+  max-height: 500px;
+}
+
+#top-back-window .window-header {
+  background-color: #B6D56A;
+  padding: 8px 8px;
+  display: flex;
+}
+
+#top-back-window .window-body {
+  display: flex;
+  height: 100%;
+  background-color: #ebf2da;
+  overflow: hidden;
+}
+
+#top-main-window-wrapper {
+  width: 100%;
+}
+
+#top-main-window {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#top-main-window .window-header {
+  background-color: #94D1CA;
+  padding: 8px 8px;
+  display: flex;
+}
+
+#top-main-window .window-body {
+  background-color: #ebf9f7;
+  height: 550px;
+  position: relative;
+}
+
+.top-img {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.top-text {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  color: #626343;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffac;
+}
+
+.top-text h1 {
+  margin: 0 16px 16px;
+  border-radius: 5px;
+  text-align: justify;
+  text-align-last: justify;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* トップセクション ↑*/
+
+/* 作品セクション↓ */
+#works-wrapper {
+  padding: 0;
+  width: 100%;
+}
+
+#works-back-window {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#works-back-window .window-header {
+  background-color: #94D1CA;
+  border: 2px solid #94D1CA;
+  padding: 6px 8px;
+  display: flex;
+}
+
+#works-back-window .window-body {
+  background-color: #ebf9f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px 16px;
+}
+
+.works-wrapper {
+  width: 100%;
+  text-align: left;
+}
+
+.works-wrapper h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  font-size: 100px;
+  margin: 0;
+  left: 0;
+  color: #b5dfd9;
+}
+
+.product-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.product-wrap a {
+  width: 45%;
+  text-decoration: none;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.product {
+  width: 100%;
+  aspect-ratio: 6/7;
+  max-height: 300px;
+  margin: 0 auto;
+  z-index: 2;
+  color: #626343;
+  background-color: #fff;
+  border: 2px solid #BEB098;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-wrap a:hover {
+  transform: translateY(0) scale(1.04);
+  transition: transform 0.4s ease;
+}
+
+.product-wrap .img-wapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  aspect-ratio: 2/1;
+  margin: 0 auto;
+}
+
+.product-wrap .img-wapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-wrap .ditail {
+  margin: 8px 16px;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.product-wrap .ditail h2 {
+  margin: 0 auto;
+  font-size: 1.2em;
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.tag-wrap {
+  padding: 10px;
+  margin-top: auto;
+  display: flex;
+  justify-content: end;
+}
+
+.tag1 {
+  font-size: 12px;
+  margin: 0;
+  padding: 4px 8px;
+  background-color: #9eccc5;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.tag2 {
+  font-size: 12px;
+  margin: 0;
+  padding: 4px 8px;
+  background-color: #8fb2d9;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.tag3 {
+  font-size: 12px;
+  margin: 0;
+  padding: 4px 8px;
+  background-color: #c8a0da;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.tag4 {
+  font-size: 12px;
+  margin: 0;
+  padding: 4px 8px;
+  background-color: #dfb17f;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.tag5 {
+  font-size: 12px;
+  margin: 0;
+  padding: 4px 8px;
+  background-color: #e4909e;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+
+/* 作品セクション ↑*/
+
+/* 自己紹介セクション ↓*/
+
+#who-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+#who-back-window {
+  width: 90%;
+  height: auto;
+  max-width: 700px;
+  margin: 72px auto 32px;
+  background-color: #ebf9f7;
+}
+
+#who-back-window .window-header {
+  background-color: #94D1CA;
+  border: 2px solid #94D1CA;
+  padding: 6px 8px;
+  display: flex;
+}
+
+#who-back-window .window-body {
+  height: calc(100% - 28px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  padding: 32px 0;
+}
+
+#who-back-window .window-body h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  font-size: 200px;
+  margin: 0;
+  left: 0;
+  color: #b5dfd9;
+}
+
+#who-image-window {
+  width: 35%;
+  height: auto;
+  margin: 150px 0 0 32px;
+}
+
+#who-image-window img {
+  width: 100%;
+  object-fit: cover;
+  border: 2px solid #BEB098;
+  border-radius: 5px;
+
+}
+
+.me-wrap {
+  width: 65%;
+  margin: 150px 24px 24px 0;
+  display: flex;
+  gap: 16px;
+  flex-flow: column;
+}
+
+#name-window {
+  background-color: #fff;
+  z-index: 30;
+  user-select: none;
+  height: auto;
+  width: 80%;
+  max-width: 300px;
+  border: 2px solid #BEB098;
+  border-radius: 5px;
+  padding: 16px 32px;
+  display: flex;
+  gap: 32px;
+}
+
+#name-window h3 {
+  margin: auto 0;
+  font-size: 20px;
+  color: #626343;
+  font-family: "Google Sans Code", monospace;
+}
+
+#name-window p {
+  margin: auto 0 auto 16px;
+  font-size: 18px;
+  font-family: "Google Sans Code", monospace;
+}
+
+#me-window {
+  background-color: #fff;
+  z-index: 20;
+  user-select: none;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border: 2px solid #BEB098;
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+
+#me-window h3 {
+  margin: 0;
+  font-size: 20px;
+  padding: 8px 0 16px;
+  color: #626343;
+  font-family: "Google Sans Code", monospace;
+  font-weight: 700;
+}
+
+#me-window p {
+  font-size: 16px;
+  padding: 0;
+  text-align: justify;
+  margin: 0 0 0 16px;
+  font-family: "Google Sans Code", monospace;
+  font-weight: 300;
+}
+
+/* 資格 */
+#qualification-window-wapper {
+  width: 100%;
+  height: auto;
+}
+
+#qualification-window {
+  background-color: #fff;
+  width: 100%;
+  padding: 16px 32px;
+  user-select: none;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #BEB098;
+}
+
+#qualification-window h3 {
+  margin: 0;
+  font-size: 20px;
+  padding: 8px 0 8px;
+  color: #626343;
+  font-family: "Google Sans Code", monospace;
+  font-weight: 700;
+}
+
+#qualification-window ul {
+  font-size: 16px;
+  padding: 0;
+}
+
+#qualification-window ul li {
+  margin: 0 16px;
+  font-family: "Google Sans Code", monospace;
+  font-weight: 200;
+}
+
+/* スキル */
+#skill-window-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+#skill-window {
+  background-color: #fff;
+  width: 100%;
+  padding: 16px 32px;
+  user-select: none;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #BEB098;
+}
+
+#skill-window h3 {
+  margin: 0;
+  font-size: 20px;
+  padding: 8px 0 8px;
+  color: #626343;
+  font-family: "Google Sans Code", monospace;
+  font-weight: 700;
+}
+
+#skill-window {
+  font-size: 16px;
+}
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: auto 16px;
+  align-items: center;
+}
+
+.skill-icon {
+  width: 48px;
+  aspect-ratio: 1/1;
+}
+
+.skill-icon img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* 自己紹介セクション ↑*/
+
+/* 取り組み */
+#attempt-wrapper {
+  width: 100%;
+  height: auto;
+  margin: 72px 0 72px;
+  padding: 0;
+}
+
+#attempt-back-window {
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(110, 110, 110);
+  overflow: hidden;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ebf9f7;
+}
+
+#attempt-back-window .window-header {
+  background-color: #94D1CA;
+  border: 2px solid #94D1CA;
+  padding: 6px 8px;
+  display: flex;
+}
+
+#attempt-back-window .window-body {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 16px;
+}
+
+#attempt-back-window .window-body h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+  margin: 0;
+  left: 0;
+  color: #b5dfd9;
+  position: absolute;
+  top: 16px;
+}
+
+.attempt-ditail-wrapper {
+  margin: 80px 16px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 90%;
+}
+
+#yokohama-font-attempt,
+#exp,
+#oc-saport {
+  width: 100%;
+  z-index: 50;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #BEB098;
+  border-radius: 5px;
+}
+
+#yokohama-font-attempt .img-wapper,
+#exp .img-wapper,
+#oc-saport .img-wapper {
+  width: 30%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+}
+
+
+#yokohama-font-attempt .img-wapper,
+#oc-saport .img-wapper {
+  margin: 16px 32px;
+}
+
+#exp .img-wapper {
+  margin: 16px 16px;
+  order: 0;
+}
+
+#yokohama-font-attempt img,
+#oc-saport img,
+#exp img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 2px solid #BEB098;
+}
+
+#yokohama-font-attempt .ditail,
+#oc-saport .ditail {
+  width: auto;
+  margin: 0 32px;
+  text-align: justify;
+  font-size: 14px;
+  color: #626343;
+}
+
+#exp .ditail {
+  width: auto;
+  margin: 0 16px 16px;
+  text-align: justify;
+  font-size: 14px;
+  color: #626343;
+  order: 1;
+}
+
+.ditail h2 {
+  margin: 16px auto;
+  font-size: 16px;
+  font-family: "Google Sans Code", monospace;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ditail p {
+  font-family: "Google Sans Code", monospace;
+  font-weight: 300;
+  padding: 16px;
+}
+
+.ditail a {
+  color: #626343;
+  text-align: center;
+  padding: 16px 0;
+}
+
+/* メイン↑ */
+
+/* フッター */
+footer {
+  background-color: #B6D56A;
+  width: 100vw;
+  height: 36px;
+  display: flex;
+  justify-content: end;
+  margin: auto 0;
+  align-items: center;
+  padding-right: 10%;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+}
