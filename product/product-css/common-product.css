@@ -134,6 +134,7 @@ main {
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
+  aspect-ratio: auto;
 }
 
 .video-wrapper iframe {
