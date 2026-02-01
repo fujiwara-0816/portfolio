@@ -361,13 +361,15 @@ main {
   margin: auto 0;
   font-size: 20px;
   color: #626343;
-  font-family: "Google Sans Code", monospace;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
 }
 
 #name-window p {
   margin: auto 0 auto 16px;
   font-size: 18px;
-  font-family: "Google Sans Code", monospace;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
 }
 
 #me-window {
@@ -387,7 +389,7 @@ main {
   font-size: 20px;
   padding: 8px 0 16px;
   color: #626343;
-  font-family: "Google Sans Code", monospace;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
 }
 
@@ -396,8 +398,8 @@ main {
   padding: 0;
   text-align: justify;
   margin: 0 0 0 16px;
-  font-family: "Google Sans Code", monospace;
-  font-weight: 300;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
 }
 
 /* 資格 */
@@ -421,7 +423,7 @@ main {
   font-size: 20px;
   padding: 8px 0 8px;
   color: #626343;
-  font-family: "Google Sans Code", monospace;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
 }
 
@@ -432,8 +434,8 @@ main {
 
 #qualification-window ul li {
   margin: 0 16px;
-  font-family: "Google Sans Code", monospace;
-  font-weight: 200;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
 }
 
 /* スキル */
@@ -457,7 +459,7 @@ main {
   font-size: 20px;
   padding: 8px 0 8px;
   color: #626343;
-  font-family: "Google Sans Code", monospace;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
 }
 
@@ -602,14 +604,14 @@ main {
 .ditail h2 {
   margin: 16px auto;
   font-size: 16px;
-  font-family: "Google Sans Code", monospace;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
   text-align: center;
 }
 
 .ditail p {
-  font-family: "Google Sans Code", monospace;
-  font-weight: 300;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
   padding: 16px;
 }
 
@@ -637,4 +639,5 @@ footer p {
   display: inline-block;
   margin: 0;
   font-size: 12px;
+  font-family: "Noto Sans JP", sans-serif;
 }
