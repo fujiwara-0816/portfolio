@@ -129,9 +129,9 @@ main {
   height: auto;
   border-radius: 5px;
   border: #BEB098 2px solid;
+  aspect-ratio: 9 / 16;
   position: relative;
   overflow: hidden;
-  background-color: #fff;
 }
 
 .video-wrapper iframe {
