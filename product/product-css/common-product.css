@@ -73,6 +73,7 @@ main {
   margin: 32px auto;
   height: auto;
   gap: 32px;
+  overflow: hidden;
 }
 
 /* 作品紹介内のウィンドウcss */
@@ -100,15 +101,6 @@ main {
   margin-top: 10px;
 }
 
-#visual-window {
-  width: 40%;
-  max-height: 600px;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 2px solid #BEB098;
-  background-color: #fff;
-}
-
 .img-wapper {
   width: auto;
   height: 600px;
@@ -116,7 +108,7 @@ main {
   overflow-x: hidden;
 }
 
-#visual-window img {
+#visual img {
   width: 100%;
 }
 
@@ -127,7 +119,7 @@ main {
 }
 
 .video-wrapper {
-  width: 100%;
+  width: 35%;
   max-width: 350px;
   border-radius: 5px;
   border: #BEB098 2px solid;
@@ -150,8 +142,10 @@ main {
 #explanation-wapper {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 58%;
   gap: 32px;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 #explanation-wapper h2 {
