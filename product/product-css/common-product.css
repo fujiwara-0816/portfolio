@@ -127,7 +127,6 @@ main {
 .video-wrapper {
   width: 100%;
   max-width: 350px;
-  height: auto;
   border-radius: 5px;
   border: #BEB098 2px solid;
   position: relative;
