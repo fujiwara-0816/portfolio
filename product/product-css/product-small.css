@@ -32,7 +32,7 @@ main {
 #works-back-window .window-header {
   padding: 0 8px 0 0;
   display: flex;
-  background-color: #B6D56A;
+  background-color: #54b32c;
   align-items: center;
 }
 
@@ -318,7 +318,7 @@ main {
   width: 50%;
   text-decoration: none;
   text-align: center;
-  background-color: #EDE896;
+  background-color: #ebe14b;
   border-radius: 5px;
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
   margin: 40px auto 0;
@@ -339,17 +339,39 @@ main {
 /* 作品紹介ここまで */
 /* フッター */
 footer {
-  background-color: #94D1CA;
+  background-color: #4bd2c9;
   width: 100vw;
-  height: 5vh;
-  margin-bottom: 0;
-  padding-right: 64px;
+  height: auto;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
   align-items: center;
 }
 
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 32px auto 0;
+  padding: 0;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: #626343;
+}
+
+footer ul li {
+  border-bottom: #626343 1px solid;
+}
+
+
 footer p {
   display: inline-block;
-  margin: 0;
+  margin: 16px auto;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+footer small {
+  margin: 16px 0 40px;
+  font-family: "Noto Sans JP", sans-serif;
 }

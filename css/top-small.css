@@ -42,7 +42,7 @@ main {
 }
 
 #top-back-window .window-header {
-  background-color: #B6D56A;
+  background-color: #54b32c;
   padding: 8px 8px;
   display: flex;
 }
@@ -65,7 +65,7 @@ main {
 }
 
 #top-main-window .window-header {
-  background-color: #94D1CA;
+  background-color: #4bd2c9;
   padding: 8px 8px;
   display: flex;
 }
@@ -77,9 +77,13 @@ main {
 }
 
 .top-img {
+  width: 100%;
+  height: 550px;
+}
+
+.top-img img {
   background-color: #fff;
   height: 100%;
-  width: 100%;
   object-fit: cover;
 }
 
@@ -94,7 +98,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  background-color: #ffffffac;
+  background-color: #ffffff;
 }
 
 .top-text h1 {
@@ -121,8 +125,8 @@ main {
 }
 
 #works-back-window .window-header {
-  background-color: #94D1CA;
-  border: 2px solid #94D1CA;
+  background-color: #4bd2c9;
+  border: 2px solid #4bd2c9;
   padding: 6px 8px;
   display: flex;
 }
@@ -147,7 +151,7 @@ main {
   font-size: 100px;
   margin: 0;
   left: 0;
-  color: #b5dfd9;
+  color: #4bd2c9;
 }
 
 .product-wrap {
@@ -296,8 +300,8 @@ main {
 }
 
 #who-back-window .window-header {
-  background-color: #94D1CA;
-  border: 2px solid #94D1CA;
+  background-color: #4bd2c9;
+  border: 2px solid #4bd2c9;
   padding: 6px 8px;
   display: flex;
 }
@@ -319,7 +323,7 @@ main {
   font-size: 100px;
   margin: 0;
   left: 0;
-  color: #b5dfd9;
+  color: #4bd2c9;
   position: absolute;
   top: 16px;
 }
@@ -514,8 +518,8 @@ main {
 }
 
 #attempt-back-window .window-header {
-  background-color: #94D1CA;
-  border: 2px solid #94D1CA;
+  background-color: #4bd2c9;
+  border: 2px solid #4bd2c9;
   padding: 6px 8px;
   display: flex;
 }
@@ -534,7 +538,7 @@ main {
   font-size: 100px;
   margin: 0;
   left: 0;
-  color: #b5dfd9;
+  color: #4bd2c9;
   position: absolute;
   top: 16px;
 }
@@ -634,19 +638,40 @@ main {
 
 /* フッター */
 footer {
-  background-color: #B6D56A;
+  background-color: #54b32c;
   width: 100vw;
-  height: 36px;
+  height: auto;
   display: flex;
-  justify-content: end;
-  margin: auto 0;
+  flex-direction: column;
   align-items: center;
-  padding-right: 10%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 32px auto 0;
+  padding: 0;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer ul li {
+  border-bottom: #fff 1px solid;
 }
 
 footer p {
+  color: #fff;
   display: inline-block;
-  margin: 0;
-  font-size: 12px;
+  margin: 16px auto;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+footer small {
+  color: #fff;
+  margin: 16px 0 40px;
   font-family: "Noto Sans JP", sans-serif;
 }
